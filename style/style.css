@@ -1,14 +1,26 @@
+@charset "UTF-8";
+.centr {
+  min-width: 300px;
+  max-width: 1400px;
+  margin: auto;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+body {
+  box-sizing: content-box;
+  background-color: rgb(234, 234, 234);
+}
 body header .background_grey {
   background-color: rgb(42, 42, 44);
-  box-sizing: content-box;
+  height: 70px;
 }
 body header .background_grey .flex_header {
   display: flex;
   justify-content: space-between;
-  min-width: 300px;
-  max-width: 984px;
-  margin: auto;
-  padding: 24px;
+  margin-top: 0px;
+  padding: 8px;
 }
 body header .background_grey .flex_header .logo_img {
   width: 178px;
@@ -25,40 +37,271 @@ body header .background_grey .flex_header .logo_img div a img {
   height: 100%;
   transition: all 0.11s;
 }
-body header .background_grey .flex_header .logo_img div a img:hover {
-  box-sizing: border-box;
-  width: 105%;
-  height: 105%;
-  transition: all 1s;
-}
 body header .background_grey .flex_header .search .search_botton {
-  border: 1px solid rgb(208, 198, 194);
-  width: 240px;
-  border-radius: 50px;
   display: flex;
   justify-content: space-between;
+  padding-right: 20px;
+  margin-right: 20px;
 }
-body header .background_grey .flex_header .search .search_botton div p {
+body header .background_grey .flex_header .search .search_botton #test {
+  background: url(../icons8-поиск-ios/icons8-поиск-50.svg) no-repeat right 90%;
+}
+body header .background_grey .flex_header .search .search_botton input {
+  background-color: rgb(42, 42, 44);
+  border-radius: 12px;
+  line-height: 46px;
+  border: 1px solid gray;
+  color: #FFF;
+  font-size: 19px;
   padding-left: 10px;
-}
-body header .background_grey .flex_header .search div img {
-  padding-right: 8px;
 }
 
 .logo_style {
   font-size: 36px;
   text-shadow: 1px 1px 5px grey, 1px -1px 4px, -2px 0px 3px, 1px 1px 7px orange;
   opacity: 0.75;
-  min-width: 300px;
-  max-width: 984px;
-  margin: auto;
-  padding-top: 20px;
-}/*# sourceMappingURL=style.css.map */
-
-.post {
-  width: 400px;
 }
+
 .flex_post {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+.flex_post .flex_column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 360px;
+}
+.flex_post .flex_column div h3 {
+  font: 28px "Prompt", sans-serif;
+}
+.flex_post .flex_column div picture .post {
+  width: 350px;
+}
+.flex_post .flex_column div .post_content {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+div a.read_more_text {
+  font-weight: 800;
+  border-bottom: 1px solid rgb(84, 85, 83);
+  padding-bottom: 10px;
+  color: rgb(84, 85, 83);
+  text-decoration: none;
+  transition: all 0.3s;
+  font-family: "Prompt", sans-serif;
+}
+div a:hover {
+  border-bottom: 0px solid rgb(84, 85, 83);
+  transition: all 0.1s;
+  text-shadow: 1px 1px 1px rgb(96, 96, 96);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content div picture img {
+  width: 550px;
+  height: 450px;
+}
+.content .four_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.content .four_div div {
+  width: 320px;
+  padding: 20px;
+  font-family: "Shadows Into Light", cursive;
+  line-height: 26px;
+}
+.content .four_div #main_text {
+  font-weight: bold;
+  font-family: "Prompt", sans-serif;
+}
+.content .four_div #background_grey {
+  background-color: rgb(190, 185, 185);
+}
+
+.about_us .about_us_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.about_us .about_us_flex div picture img {
+  width: 360px;
+}
+.about_us .about_us_flex div h3 {
+  font-family: "Ibarra Real Nova", serif;
+  padding-left: 20px;
+}
+.about_us .about_us_flex #flex_grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.about_us .about_us_flex #flex_grid #flex_p {
+  display: flex;
+  flex-direction: row;
+  font-family: "Shadows Into Light", cursive;
+  line-height: 26px;
+}
+.about_us .about_us_flex #flex_grid div {
+  margin: 0px 20px;
+}
+
+.map #map_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.map #map_flex div {
+  align-self: center;
+}
+.map #map_flex div h2 {
+  font-family: "Prompt", sans-serif;
+}
+
+.pages div {
+  display: flex;
+  flex-direction: column;
+}
+.pages div #impotent_text {
+  width: 600px;
+  margin-bottom: 40px;
+}
+.pages div #impotent_text h1 {
+  color: rgb(115, 24, 70);
+  font-family: "Prompt", sans-serif;
+}
+.pages div #impotent_text p {
+  font-family: "Ibarra Real Nova", serif;
+}
+.pages div .pages_top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.pages div .pages_top .view_style:hover {
+  width: 362px;
+  height: 502px;
+  transition: all 0.5s;
+}
+.pages div .pages_top .view_style {
+  width: 360px;
+  height: 500px;
+  transition: all 0.5s;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 8px 8px 22px black, -1px -1px 29px black;
+}
+.pages div .pages_top .view_style h2 {
+  color: rgb(115, 24, 70);
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
+}
+.pages div .pages_top .view_style p {
+  color: rgb(115, 24, 70);
+  font: 21px "Indie Flower", cursive;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.pages div .pages_top .view_style .read_btn:hover {
+  background-color: #FFF;
+  transition: all 0.6s;
+  border-radius: 20px;
+}
+.pages div .pages_top .view_style .read_btn {
+  background-color: rgb(115, 24, 70);
+  width: 35%;
+  transition: all 1.2s;
+}
+.pages div .pages_top .view_style .read_btn p {
+  margin: 0;
+}
+.pages div .pages_top .view_style .read_btn p a:hover {
+  background-color: #FFF;
+  color: rgb(115, 24, 70);
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all 0.6s;
+}
+.pages div .pages_top .view_style .read_btn p a {
+  text-decoration: none;
+  display: block;
+  line-height: 34px;
+  color: white;
+  letter-spacing: 0px;
+  transition: all 1.2s;
+}
+.pages div .pages_top div.view_style:last-child {
+  margin-right: 0px;
+}
+
+.contact {
+  width: 600px;
+  margin: auto;
+  padding-top: 60px;
+}
+.contact div h2 {
+  text-align: center;
+  font-size: 34px;
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+}
+.contact div form {
+  text-align: center;
+}
+.contact div form input {
+  border: none;
+  width: 400px;
+  border-bottom: 1px solid black;
+  background-color: rgb(234, 234, 234);
+}
+.contact div form #massage {
+  height: 80px;
+  vertical-align: top;
+}
+.contact div form #submit {
+  width: 80px;
+  border: 1px solid black;
+  font-family: "Ibarra Real Nova", serif;
+  border-radius: 4px;
+}
+.contact div form #submit:hover {
+  cursor: pointer;
+  color: rgb(115, 24, 70);
+}
+
+.footer {
+  padding-top: 60px;
+}
+.footer .gray_block {
+  background-color: rgb(42, 42, 44);
+  height: 70px;
+  width: 100%;
+}
+.footer .gray_block .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .gray_block .wrapper p {
+  text-align: center;
+  width: 700px;
+}
+.footer .gray_block .wrapper .logo_img {
+  width: 178px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */

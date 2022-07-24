@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="./style_oo.css">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Prompt&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Indie+Flower&family=Prompt&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
   <title>Navigation</title>
 </head>
 
@@ -18,19 +19,26 @@
   <header>
     <div class="background_grey">
       <a name="social-net-img"></a>
-      <div class="flex_header">
+      <div class="flex_header centr">
+
+
 
         <div class="logo_img">
-          <div><a href="#social-net-img"><img src="./facebook.png" alt="facebook"></a></div>
+          <div><a href="#social-net-img" id="face_black"><img src="./facebook.png" alt="facebook"></a></div>
           <div><a href="#social-net-img"><img src="./pinterest.png" alt="pinterest"></a></div>
           <div><a href="#social-net-img"><img src="./telega.png" alt="telegram"></a></div>
         </div>
+
+
+
         <div class="search">
           <div class="search_botton">
-            <div>
-              <p>Search...</p>
-            </div>
-            <div><img src="./icons8-поиск-ios/icons8-поиск-50.svg" alt="search"></div>
+            
+              <input type="text" placeholder="Search..." id="test">
+              <picture>
+                <!-- <img src="./icons8-поиск-ios/icons8-поиск-50.svg" alt="search"> -->
+              </picture>
+
           </div>
         </div>
 
@@ -39,12 +47,12 @@
     </div>
   </header>
 
-  <div class="logo_style">LOGO</div>
+  <div class="logo_style centr">LOGO</div>
 
 
-  <div class="flex_post">
+  <div class="flex_post centr">
 
-    <div>
+    <div class="flex_column">
       <div>
         <h3>
           Post 1 Headline
@@ -52,25 +60,25 @@
       </div>
       <div>
         <picture>
-          <img class="post" src="./images/1646733133_3-kartinkin-net-p-kartinki-prirodi-leto-3.jpg" alt="post">
+          <img class="post" src="./images/1646733135_6-kartinkin-net-p-kartinki-prirodi-leto-7.jpg" alt="post">
         </picture>
       </div>
       <div>
-        <p>
+        <p class="post_content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit
         </p>
       </div>
       <div>
-        <a href="">
+        <a class="read_more_text" href="">
           Read More
         </a>
       </div>
     </div>
 
-    <div>
+    <div class="flex_column">
       <div>
         <h3>
-          Post 1 Headline
+          Post 2 Headline
         </h3>
       </div>
       <div>
@@ -79,45 +87,192 @@
         </picture>
       </div>
       <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit
+        <p class="post_content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, itaque quisquam velit neque ipsa magni
         </p>
       </div>
       <div>
-        <a href="">
+        <a class="read_more_text" href="">
           Read More
         </a>
       </div>
     </div>
     
-      <div>
+      <div class="flex_column">
         <div>
           <h3>
-            Post 1 Headline
+            Post 3 Headline
           </h3>
         </div>
         <div>
           <picture>
-            <img class="post" src="./images/1646733133_3-kartinkin-net-p-kartinki-prirodi-leto-3.jpg" alt="post">
+            <img class="post" src="./images/1646733135_6-kartinkin-net-p-kartinki-prirodi-leto-7.jpg" alt="post">
           </picture>
         </div>
         <div>
-          <p>
+          <p class="post_content">
             Lorem ipsum dolor sit amet consectetur adipisicing elit
           </p>
         </div>
         <div>
-          <a href="">
+          <a class="read_more_text" href="">
             Read More
           </a>
         </div>
       </div>
     
-
   </div>
 
 
+  <div class="content centr">
 
+    <div>
+      <picture>
+        <img src="./images/moutain.jpg" alt="mountain">
+      </picture>
+    </div>
+    <div class="four_div">
+      <div id="main_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, officiis</div>
+      <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe illum officia optio, doloremque obcaecati eveniet culpa necessitatibus, quaerat tempora est nesciunt temporibus iure ab provident sunt quia placeat nisi incidunt?</div>
+      <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe illum officia optio, doloremque obcaecati eveniet culpa necessitatibus, quaerat tempora est nesciunt temporibus iure ab provident sunt quia placeat nisi incidunt?</div>
+      <div id="background_grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe illum officia optio, doloremque obcaecati eveniet culpa necessitatibus, quaerat tempora est nesciunt temporibus iure ab provident sunt quia placeat nisi incidunt?</div>
+    </div>
+
+  </div>
+
+  <div class="about_us centr">
+
+    <div class="about_us_flex">
+      <div>
+        <picture>
+          <img src="./images/pexels-photo-1181400.jpeg" alt="">
+        </picture>
+      </div>
+
+      <div id="flex_grid">
+        <div>
+          <h3>
+            About us
+          </h3>
+        </div>
+        <div id="flex_p">
+          <div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint beatae mollitia accusamus eligendi! Facere distinctio alias molestias facilis numquam vero inventore fugit, unde placeat impedit doloribus minus cupiditate neque obcaecati adipisci veniam asperiores qui. Placeat assumenda magnam, dignissimos deserunt neque, qui soluta numquam a provident animi eos iure ullam maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit expedita perferendis delectus porro, fugiat possimus fuga consectetur similique provident autem.
+            </p>
+          </div>
+          <div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi illo, deleniti voluptates repudiandae iusto enim sapiente sit aut ratione recusandae aperiam similique, voluptatibus quasi qui labore reiciendis laboriosam sed explicabo dolorem alias adipisci ipsam nulla et. Fugit omnis quidem provident obcaecati harum facere aperiam quae quia optio eum, quibusdam unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nesciunt iusto voluptates, laboriosam molestiae quis aliquid maiores earum doloribus architecto.
+            </p>
+            <a class="read_more_text" href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <div class="map centr">
+
+    <div id="map_flex">
+      <div>
+        <h2>
+          Empire State Building
+        </h2>
+        <p>20 W 34th St., New York, NY 10001, Соединенные Штаты</p>
+        <p>1-232-4356-3100</p>
+        <a href="http://www.esbnyc.com/">http://www.esbnyc.com/</a>
+      </div>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10166.995409194118!2d-73.99308115998663!3d40.7473783143892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2z0K3QvNC_0LDQudGALdGB0YLQtdC50YIt0LHQuNC70LTQuNC90LM!5e0!3m2!1sru!2suk!4v1658631549779!5m2!1sru!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="pages centr">
+
+    <div>
+
+      <section id="impotent_text">
+        <h1>Leading consulting firms in the United States</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit voluptates temporibus, debitis eius ipsum voluptatem earum cum ullam natus officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, cumque.
+        </p>
+      </section>
+
+     <section class="pages_top">
+        <div class="view_style">
+          <h2>
+            01
+          </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, minima blanditiis, ratione magni qui alias accusamus, beatae iure ut odit ab sequi corporis? Nostrum, reprehenderit perferendis voluptatem, quaerat ratione magni commodi corrupti, dolorem rem delectus totam. Perspiciatis, nulla! Quaerat dolorem similique magnam consequuntur ab dolorum adipisci. Autem enim doloribus corporis.</p>
+          <div class="read_btn">
+            <p><a href="">READ MORE</a></p>
+          </div>
+        </div>
+        <div class="view_style">
+          <h2>
+            02
+          </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, minima blanditiis, ratione magni qui alias accusamus, beatae iure ut odit ab sequi corporis? Nostrum, reprehenderit perferendis voluptatem, quaerat ratione magni commodi corrupti, dolorem rem delectus totam. Perspiciatis, nulla! Quaerat dolorem similique magnam consequuntur ab dolorum adipisci. Autem enim doloribus corporis.</p>
+          <div class="read_btn">
+            <p><a href="">READ MORE</a></p>
+          </div>
+        </div>
+        <div class="view_style">
+          <h2>
+            03
+          </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, minima blanditiis, ratione magni qui alias accusamus, beatae iure ut odit ab sequi corporis? Nostrum, reprehenderit perferendis voluptatem, quaerat ratione magni commodi corrupti, dolorem rem delectus totam. Perspiciatis, nulla! Quaerat dolorem similique magnam consequuntur ab dolorum adipisci. Autem enim doloribus corporis.</p>
+          <div class="read_btn">
+            <p><a href="">READ MORE</a></p>
+          </div>
+        </div>
+     </section>
+
+    </div>
+  </div>  
+
+    <div class="contact">
+
+      <div>
+        <h2>
+          Contact us
+        </h2>
+        <form action="" method="get">
+          <input type="text" placeholder="ENTER YOUR NAME"><br><br>
+          <input type="email" placeholder="ENTER A VALID EMAIL"><br><br>
+          <input id="massage" type="text" placeholder="ENTER YOUR MASSAGE " maxlength="1000"><br><br>
+          <input id="submit" type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+      <div class="gray_block">
+       <div class="wrapper">
+        <div class="logo_style">LOGO</div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam eos quas illo ipsam, nesciunt sit nam nisi corporis! Modi?
+          </p>
+        </div>
+        <div class="logo_img">
+          <div><a href="#social-net-img"><img src="./facebook.png" alt="facebook"></a></div>
+          <div><a href="#social-net-img"><img src="./pinterest.png" alt="pinterest"></a></div>
+          <div><a href="#social-net-img"><img src="./telega.png" alt="telegram"></a></div>
+        </div>
+       </div>
+      </div>
+
+    </div>
 
 
 
