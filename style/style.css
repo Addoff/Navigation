@@ -1,0 +1,64 @@
+body header .background_grey {
+  background-color: rgb(42, 42, 44);
+  box-sizing: content-box;
+}
+body header .background_grey .flex_header {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 984px;
+  margin: auto;
+  padding: 24px;
+}
+body header .background_grey .flex_header .logo_img {
+  width: 178px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+body header .background_grey .flex_header .logo_img div {
+  box-sizing: border-box;
+}
+body header .background_grey .flex_header .logo_img div a img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.11s;
+}
+body header .background_grey .flex_header .logo_img div a img:hover {
+  box-sizing: border-box;
+  width: 105%;
+  height: 105%;
+  transition: all 1s;
+}
+body header .background_grey .flex_header .search .search_botton {
+  border: 1px solid rgb(208, 198, 194);
+  width: 240px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+body header .background_grey .flex_header .search .search_botton div p {
+  padding-left: 10px;
+}
+body header .background_grey .flex_header .search div img {
+  padding-right: 8px;
+}
+
+.logo_style {
+  font-size: 36px;
+  text-shadow: 1px 1px 5px grey, 1px -1px 4px, -2px 0px 3px, 1px 1px 7px orange;
+  opacity: 0.75;
+  min-width: 300px;
+  max-width: 984px;
+  margin: auto;
+  padding-top: 20px;
+}/*# sourceMappingURL=style.css.map */
+
+.post {
+  width: 400px;
+}
+.flex_post {
+  display: flex;
+  flex-direction: row;
+}
